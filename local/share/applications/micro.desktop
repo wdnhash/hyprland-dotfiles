@@ -1,0 +1,18 @@
+[Desktop Entry]
+
+Name=Micro
+GenericName=Text Editor
+Comment=Edit text files in a terminal
+
+Icon=micro
+Type=Application
+Categories=Utility;TextEditor;Development;
+Keywords=text;editor;syntax;terminal;
+
+# Override local: lança o Alacritty diretamente (Terminal=true falha no
+# Nautilus/glib, que não conhece o Alacritty). --class micro ativa a
+# regra de janela flutuante do Hyprland.
+Exec=alacritty --class micro -e micro %F
+StartupNotify=false
+Terminal=false
+MimeType=text/plain;text/markdown;text/x-chdr;text/x-csrc;text/x-c++hdr;text/x-c++src;text/x-java;text/x-dsrc;text/x-pascal;text/x-perl;text/x-python;application/x-php;application/x-httpd-php3;application/x-httpd-php4;application/x-httpd-php5;application/xml;text/html;text/css;text/x-sql;text/x-diff;
